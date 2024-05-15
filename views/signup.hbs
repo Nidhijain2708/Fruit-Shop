@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="/styles/signup.css">
+</head>
+
+<body>
+    <div class="signupContainer">
+        <div class="left">
+            <img src="https://cdni.iconscout.com/illustration/premium/thumb/sign-up-8694031-6983270.png">
+        </div>
+        <div class="right">
+            <div class="say">Welcome to Fruit shop</div>
+            <form class="signupForm" method="POST" action="/signup">
+                <input class="signupInput" type="text" placeholder="Enter username" name="username"><br>
+                <input class="signupInput" type="password" placeholder="Enter password" name="password"><br>
+
+                <div class="msg">{{msg}}</div>
+                <button class="signupButton" type="submit">Signup</button>
+
+                <div class="already">Already a user?</div>
+                <button class="loginButton"><a href="/login">Login</a></button>
+            </form>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</body>
+
+</html>

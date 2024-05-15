@@ -1,0 +1,22 @@
+<nav class="navbar">
+    <div class="left">
+        <a class="navItem">Fruit Shop</a>
+        {{!-- <a class="navItem" href="#">Profile</a> --}}
+        <a class="navItem" href="/shop/products">Fruits</a>
+        <a class="navItem cart" href="/shop/cart">Cart
+            {{#if cartCount}}
+            <span class="cartCount">{{cartCount}}</span>
+            {{else}}
+            <span class="cartCount"></span>
+            {{/if}}
+        </a>
+    </div>
+    <div class="right">
+        {{#if this.isAdmin}}
+        <a class="navItem" href="/admin/products">Admin Fruits</a>
+        <a class="navItem" href="/admin/add-product">Add Fruits</a>
+        {{/if}}
+        <a class="navItem" href="/logout">Logout</a>
+    </div>
+    <div class="clearfix"></div>
+</nav>

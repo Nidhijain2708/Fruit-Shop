@@ -1,0 +1,11 @@
+<div class="productsList">
+    {{#each products as |product|}}
+    <div class="productItem">
+        <div class="productName">{{product.name}}</div>
+        <div class="productPrice">Price: {{product.price}}</div>
+        <img class="productImage" src={{product.imageUrl}}>
+        <div class="productDescription">Description: {{product.description}}</div>
+        <button class="productDelete"><a href="/deleteProduct?id={{product._id}}">Delete</a></button>
+    </div>
+    {{/each}}
+</div>

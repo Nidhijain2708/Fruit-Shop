@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles/login.css">
+</head>
+
+<body>
+    <div class="loginContainer">
+        <div class="left">
+            <img src="https://png.pngtree.com/png-clipart/20230825/original/pngtree-a-woman-works-at-home-at-a-computer-picture-image_8470193.png">
+        </div>
+        <div class="right">
+            <div class="say">Login to Fruit shop</div>
+            <form class="loginForm" method="POST" action="/login">
+                <input class="loginInput" type="text" placeholder="Enter username" name="username"><br>
+                <input class="loginInput" type="password" placeholder="Enter password" name="password"><br>
+
+                {{!-- <div class="msg">{{msg}}</div> --}}
+                <button class="loginButton" type="submit">Login</button>
+
+                <div class="already">Not a user?</div>
+                <button class="signupButton"><a href="/signup">Signup</a></button>
+            </form>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+    {{!-- <div class="msg">{{msg}}</div>
+    <form method="POST" action="/login">
+        <input type="text" placeholder="Enter username" name="username">
+        <input type="text" placeholder="Enter password" name="password">
+
+        <button type="submit">Login!!</button>
+    </form> --}}
+</body>
+
+</html>

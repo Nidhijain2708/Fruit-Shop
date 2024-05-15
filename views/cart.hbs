@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/products.css">
+    <style>
+        body{
+            background-color: rgb(201, 249, 201);
+        }
+    </style>
+</head>
+<body>
+    {{>navbar isAdmin=isAdmin}}
+    {{>cartProducts userCart=userCart totalPrice=totalPrice}}
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/removeFromCart.js"></script>
+</body>
+</html>

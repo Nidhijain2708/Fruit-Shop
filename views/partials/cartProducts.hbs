@@ -1,0 +1,19 @@
+<div class="cartContainer productsList">
+    {{#each userCart as |cartProduct|}}
+    <div class="productItem">
+        <div class="productName">{{cartProduct.id.name}}</div>
+        <div class="productPrice">Price: {{cartProduct.id.price}}</div>
+        <img class="productImage" src={{cartProduct.id.imageUrl}}>
+        <div class="productDescription">Description: {{cartProduct.id.description}}</div>
+        <div class="productQuantity">Quantity: {{cartProduct.quantity}}</div>
+        <button productId={{cartProduct.id._id}} class="cartButton removeFromCart">Remove</button>
+        <button class="cartButton">Buy</button>
+    </div>
+    {{/each}}
+</div>
+
+<div class="cartSummary">
+    <span class="sumPrice">Cart Total : </span>
+    <span class="sumPrice">{{totalPrice}}</span><br>
+    <button class="cartButton">Buy</button>
+</div>

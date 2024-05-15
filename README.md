@@ -42,3 +42,6 @@ Fruit Shop is an e-commerce web application designed to provide a seamless shopp
 - Database: MongoDB Atlas
 - Authentication: Passport.js
 - Template engine- HBS
+
+## Authors
+- [Nidhi Jain](https://github.com/Nidhijain2708)
